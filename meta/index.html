@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>AI Learning Platform</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#progress">Progress</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Task Section -->
+        <section id="tasks">
+            <h2>Real-World Problem-Solving Tasks</h2>
+            <div class="task">
+                <h3>Task 1: Solve the Business Problem</h3>
+                <p>Imagine you are a business analyst. The company is struggling with sales data. Analyze and provide recommendations.</p>
+                <textarea id="task1Answer" placeholder="Write your solution here..."></textarea>
+                <button onclick="submitTask('task1')">Submit Task</button>
+            </div>
+            <div class="task">
+                <h3>Task 2: Programming Challenge</h3>
+                <p>Write a Python function that calculates the Fibonacci sequence for a given number n.</p>
+                <textarea id="task2Answer" placeholder="Write your solution here..."></textarea>
+                <button onclick="submitTask('task2')">Submit Task</button>
+            </div>
+        </section>
+
+        <!-- Progress Section -->
+        <section id="progress">
+            <h2>Your Progress</h2>
+            <p>Track your overall performance and learning journey.</p>
+            <div id="progress-bar">
+                <div id="progress-filled"></div>
+            </div>
+            <p id="progress-text">0% Complete</p>
+        </section>
+
+        <!-- Feedback Section -->
+        <section id="feedback">
+            <h2>AI Feedback</h2>
+            <div id="feedback-container">
+                <!-- Dynamic feedback will appear here after task submission -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AI Learning Platform</p>
+    </footer>
+
+</body>
+</html>
